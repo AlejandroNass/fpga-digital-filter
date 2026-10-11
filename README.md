@@ -3,7 +3,7 @@ FPGA implementation of digital filters (FIR/IIR) in VHDL
 ## System Architecture & Hardware Setup
 
 1. **Analog-to-Digital Conversion (ADC):**
-   * An Arduino board acts as the external ADC, sampling the analog noise-contaminated signal from the motor sensor/function generator via its internal 10-bit ADC.
+   * An Arduino board acts as the external ADC, sampling the analog noise-contaminated signal from the motor sensor/function generator via its internal 8-bit ADC.
    * The digital samples are sent as an 8-bit parallel bus directly to the FPGA's expansion header (GPIO).
 
 2. **Digital Signal Processing (FPGA):**
